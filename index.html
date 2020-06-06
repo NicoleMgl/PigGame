@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <a href="#openModal" class="open-btn"><ion-icon name="help-circle"></ion-icon></a>
+            <div id="openModal" class="modalWindow">
+                <div>
+                    <div class="modalHeader">
+                        <h2>Instructions: Pig Game</h2>
+                        <a href="#close" title="Close" class="close">X</a>
+                    </div>
+
+                    <div class="modalContent">
+                        <p>The goal of the game is to get to 50 points first. </p>
+                        <p>Players go one at a time <b>ROLL</b> a die. If a player rolls a 1, they forfeit all accumulated points and it is the other player's turn.</p>
+                        <p> Players can <b>HOLD</b> their score in order to keep their rolls from being forfeitted. When you <b>HOLD</b> your score, the next player gets to go. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+        
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>
