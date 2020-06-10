@@ -126,13 +126,13 @@ button {
 }
 
 button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover ion-icon { margin-right: 20px; }
 
 button:focus {
     outline: none;
 }
 
-i {
+ion-icon {
     color: #EB4D4D;
     display: inline-block;
     margin-right: 15px;
@@ -175,7 +175,7 @@ i {
     pointer-events: none;
 }
 
-ion-icon {
+.open-btn {
     position: absolute;
     left: 1%;
     top: 2%;
